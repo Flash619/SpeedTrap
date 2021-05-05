@@ -5,7 +5,7 @@ Speed trap is a simple extensible profiling library. By using Traps, you can tra
 ### A Simple Example
 ```c#
 var speedTrap = new SpeedTrap();
-var trap = speedTrap.getTrap("hello-world");
+var trap = speedTrap.GetTrap("hello-world");
 var run = trap.StartRun();
 
 Console.WriteLine("Hello World!");
@@ -21,7 +21,7 @@ public static void HelloWorld()
     => Console.WriteLine("Hello World!");
 
 var speedTrap = new SpeedTrap();
-var trap = speedTrap.getTrap(HelloWorld);
+var trap = speedTrap.GetTrap(HelloWorld);
 
 for (var i = 0; i < 100; i++)
 {
