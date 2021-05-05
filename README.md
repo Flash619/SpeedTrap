@@ -1,7 +1,7 @@
-#SpeedTrap
+# SpeedTrap
 Speed trap is a simple extensible profiling library. By using Traps, you can track how fast various portions of code execute, as well as how often they are executed.
 
-##Exmples
+## Exmples
 ### A Simple Example
 ```c#
 var speedTrap = new SpeedTrap();
