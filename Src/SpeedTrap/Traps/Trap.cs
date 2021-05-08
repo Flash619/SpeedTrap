@@ -9,6 +9,7 @@ namespace SpeedTrap.Traps
         public MemberInfo? Action { get; init; }
         public IEnumerable<IRun> Runs => _runs;
         private readonly List<IRun> _runs = new();
+        public IRun? LastRun { get; private set; }
 
         internal Trap(string name)
             => Name = name;
@@ -20,6 +21,7 @@ namespace SpeedTrap.Traps
         {
             var run = new Run();
             _runs.Add(run);
+            LastRun = run;
             run.Start();
             return run;
         }

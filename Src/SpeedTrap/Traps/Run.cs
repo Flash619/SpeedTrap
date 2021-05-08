@@ -5,6 +5,7 @@ namespace SpeedTrap.Traps
 {
     public class Run : IRun
     {
+        public bool IsRunning => _stopwatch.IsRunning;
         public DateTimeOffset StartedOn { get; }
         public TimeSpan Duration => _stopwatch.Elapsed;
         private readonly Stopwatch _stopwatch;
@@ -15,6 +16,7 @@ namespace SpeedTrap.Traps
         internal void Start()
         {
             _stopwatch.Start();
+            
         }
         
         public void Stop()
