@@ -6,10 +6,6 @@ namespace SpeedTrap.Reporting.Extensions
 {
     public static class SpeedTrapExtensions
     {
-        public static async Task<string> GenerateHtmlReport(this ISpeedTrap speedTrap, ReportOptions? options = null)
-        {
-            var report = await speedTrap.GenerateReport(options);
-        }
         
         public static Task<IReport> GenerateReport(this ISpeedTrap speedTrap, ReportOptions? options = null)
         {

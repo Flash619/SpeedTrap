@@ -9,8 +9,4 @@
       <ProjectReference Include="..\SpeedTrap.Contracts\SpeedTrap.Contracts.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Templates" />
-    </ItemGroup>
-
 </Project>
